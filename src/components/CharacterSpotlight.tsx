@@ -46,9 +46,6 @@ export default function CharacterSpotlight() {
                   <Quote className="w-3 h-3 text-brand-orange flex-shrink-0" />
                   "{char.quote}"
                 </p>
-                <p className="text-[10px] font-japanese text-brand-orange pl-4">
-                  {char.japaneseQuote}
-                </p>
               </div>
 
               {/* Stats / Traits */}

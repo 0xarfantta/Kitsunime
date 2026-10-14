@@ -76,14 +76,11 @@ export default function AnimeCard({
       <div className="p-3 flex-1 flex flex-col justify-between">
         <div>
           <h3
-            className="font-bold text-xs sm:text-sm text-stone-900 dark:text-stone-100 group-hover:text-brand-orange transition-colors line-clamp-1"
+            className="font-bold text-xs sm:text-sm text-stone-900 dark:text-stone-100 group-hover:text-brand-orange transition-colors line-clamp-2"
             title={anime.title}
           >
             {anime.title}
           </h3>
-          <p className="text-[10px] text-stone-400 font-japanese mt-0.5 truncate">
-            {anime.japaneseTitle}
-          </p>
         </div>
 
         <div className="pt-2 mt-2 border-t border-stone-100 dark:border-brand-dark-border/50 flex items-center justify-between text-[10px] text-stone-500 dark:text-stone-400">

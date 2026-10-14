@@ -55,9 +55,6 @@ export default function HeroSlider({
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
             {currentAnime.title}
           </h1>
-          <p className="text-xs sm:text-sm font-japanese text-brand-yellow font-medium mt-1">
-            {currentAnime.japaneseTitle}
-          </p>
         </div>
 
         {/* Meta Info Badge Bar */}

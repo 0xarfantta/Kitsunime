@@ -150,8 +150,8 @@ export default function Home() {
       list = list.filter(
         (item) =>
           item.title.toLowerCase().includes(q) ||
-          item.japaneseTitle.toLowerCase().includes(q) ||
-          item.romaji.toLowerCase().includes(q) ||
+          (item.romaji ? item.romaji.toLowerCase().includes(q) : false) ||
+          (item.japaneseTitle ? item.japaneseTitle.toLowerCase().includes(q) : false) ||
           item.genres.some((g) => g.toLowerCase().includes(q))
       );
     }

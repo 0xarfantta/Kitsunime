@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (bgImg) bgImg.style.backgroundImage = `url('${anime.banner}')`;
         if (title) title.textContent = anime.title;
-        if (jpTitle) jpTitle.textContent = anime.japaneseTitle;
+        if (jpTitle) jpTitle.textContent = '';
         if (synopsis) synopsis.textContent = anime.synopsis;
         if (rating) rating.innerHTML = `<i class="fa-solid fa-star text-brand-yellow"></i> ${anime.score}`;
         if (year) year.textContent = `${anime.year} • ${anime.episodes} Ep`;
@@ -203,8 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const q = searchQuery.toLowerCase().trim();
             list = list.filter(item => 
                 item.title.toLowerCase().includes(q) || 
-                item.japaneseTitle.toLowerCase().includes(q) ||
-                item.romaji.toLowerCase().includes(q) ||
+                (item.romaji ? item.romaji.toLowerCase().includes(q) : false) ||
+                (item.japaneseTitle ? item.japaneseTitle.toLowerCase().includes(q) : false) ||
                 item.genres.some(g => g.toLowerCase().includes(q))
             );
         }
@@ -289,10 +289,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <!-- Details -->
                     <div class="p-3 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-stone-100 group-hover:text-brand-orange transition-colors line-clamp-1" title="${anime.title}">
+                            <h3 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-stone-100 group-hover:text-brand-orange transition-colors line-clamp-2" title="${anime.title}">
                                 ${anime.title}
                             </h3>
-                            <p class="text-[10px] text-stone-400 font-japanese mt-0.5 truncate">${anime.japaneseTitle}</p>
                         </div>
 
                         <div class="pt-2 mt-2 border-t border-stone-100 dark:border-brand-dark-border/50 flex items-center justify-between text-[10px] text-stone-500 dark:text-stone-400">
@@ -377,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bannerImg) bannerImg.src = anime.banner;
         if (posterImg) posterImg.src = anime.poster;
         if (title) title.textContent = anime.title;
-        if (jpTitle) jpTitle.textContent = `${anime.japaneseTitle} • ${anime.romaji}`;
+        if (jpTitle) jpTitle.textContent = '';
         if (score) score.textContent = anime.score;
         if (synopsis) synopsis.textContent = anime.synopsis;
         if (studio) studio.textContent = anime.studio;

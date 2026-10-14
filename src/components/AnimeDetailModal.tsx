@@ -117,9 +117,6 @@ export default function AnimeDetailModal({
                 <h2 className="text-xl sm:text-3xl font-extrabold text-stone-900 dark:text-white">
                   {anime.title}
                 </h2>
-                <p className="text-xs sm:text-sm font-japanese text-brand-yellow font-medium mt-0.5">
-                  {anime.japaneseTitle} • {anime.romaji}
-                </p>
               </div>
 
               {/* Badges */}

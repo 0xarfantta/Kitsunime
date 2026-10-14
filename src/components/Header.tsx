@@ -35,15 +35,17 @@ export default function Header({
           onClick={() => handleNavClick("hero-section")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-orange via-brand-orange-light to-brand-yellow flex items-center justify-center shadow-glow-orange group-hover:scale-105 transition-transform">
-            <Flame className="w-6 h-6 text-white fill-white" />
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="Kitsune Stream Logo" 
+            className="w-11 h-11 rounded-2xl object-cover shadow-glow-orange group-hover:scale-105 transition-transform" 
+          />
           <div>
             <span className="text-xl font-extrabold tracking-tight text-stone-900 dark:text-white flex items-center gap-1">
               Kitsune<span className="text-brand-orange">Stream</span>
             </span>
-            <span className="block text-[10px] font-japanese tracking-widest text-brand-yellow font-semibold -mt-1">
-              狐アニメ • 究極
+            <span className="block text-[10px] tracking-wider text-brand-yellow font-semibold -mt-0.5">
+              Streaming Anime Indonesia
             </span>
           </div>
         </div>
