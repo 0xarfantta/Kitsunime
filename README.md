@@ -14,15 +14,15 @@ Website katalog & direktori anime modern dengan kombinasi warna **Oranye**, **Ku
 
 ## ✨ Fitur Utama
 1. **Hero Spotlight Carousel**:
-   - Slider otomatis untuk anime unggulan teratas (#1 Jujutsu Kaisen, Frieren, Solo Leveling, dll.).
+   - Slider otomatis untuk anime unggulan teratas (Jujutsu Kaisen, Frieren, Solo Leveling, dll.).
    - Tombol tonton trailer langsung dengan pop-up player YouTube HD.
 2. **Pencarian Real-Time (Live Search)**:
-   - Cari anime berdasarkan judul bahasa Indonesia, Romaji, maupun Kanji Jepang secara instan.
+   - Cari anime berdasarkan judul bahasa Indonesia secara instan.
 3. **Filter Genre Interaktif**:
    - Filter cepat untuk *Action*, *Fantasy*, *Shounen*, *Romance*, *Comedy*, *Sci-Fi*, *Isekai*, dan *Supernatural*.
 4. **Detail Anime Modal (Pop-up Interaktif)**:
    - Sinopsis lengkap dalam Bahasa Indonesia.
-   - Info studio (MAPPA, Ufotable, Madhouse, dll.), musim, total episode, & durasi.
+   - Info studio (MAPPA, ufotable, Madhouse, dll.), musim, total episode, & durasi.
    - Daftar karakter utama beserta pengisi suara (Voice Actor / Seiyuu).
    - Fitur bagikan link & simpan ke daftar tonton.
 5. **Daftar Tontonan Saya (Watchlist LocalStorage)**:
@@ -36,12 +36,3 @@ Website katalog & direktori anime modern dengan kombinasi warna **Oranye**, **Ku
    - Toggle switch untuk beralih antara tema gelap hangat dan tema terang putih bersih.
 9. **Efek Partikel Latar (Ambient Floating Embers)**:
    - Animasi partikel oranye & emas bercahaya menggunakan HTML5 Canvas.
-
----
-
-## 🚀 Cara Menjalankan
-Buka file `index.html` langsung di browser favorit Anda (Google Chrome, Edge, Firefox, Brave):
-```powershell
-Start-Process "C:\Users\Arfantta\.gemini\antigravity\scratch\anime-website\index.html"
-```
-atau gunakan ekstensi Live Server / HTTP server lokal.
